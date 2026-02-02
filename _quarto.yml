@@ -1,0 +1,34 @@
+project:
+  # Use a default project so each `.qmd` can be rendered independently.
+  type: default
+
+format:
+  html:
+    # Base theme for browser previews
+    theme:
+      - cosmo
+      - styles.scss
+    toc: true
+    lang: ko
+
+  pdf:
+    # We output each story as its own PDF (A4, comfortable margins)
+    documentclass: article
+    lang: ko
+    toc: false
+    number-sections: false
+    colorlinks: true
+    geometry:
+      - paper=a4paper
+      - margin=22mm
+    fontsize: 11pt
+    linestretch: 1.2
+    include-in-header:
+      text: |
+        % ---- Korean-friendly PDF settings (XeLaTeX recommended) ----
+        \usepackage{fontspec}
+        \usepackage{kotex}
+        % Try these fonts; adjust to what your system/CI has installed.
+        \setmainfont{Noto Serif CJK KR}
+        \setsansfont{Noto Sans CJK KR}
+        \setmonofont{Noto Sans Mono CJK KR}

@@ -1,0 +1,22 @@
+/* Custom styles for HTML previews */
+
+body {
+  line-height: 1.75;
+  font-family: "Noto Serif CJK KR", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.02em;
+  font-family: "Noto Serif CJK KR", serif;
+}
+
+/* Center figures and keep them within the page */
+.quarto-figure,
+figure {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

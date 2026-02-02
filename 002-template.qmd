@@ -1,0 +1,27 @@
+---
+title: "새로운 이야기: (제목을 적어주세요)"
+author: "평범한 동화책"
+format:
+  pdf:
+    toc: false
+---
+
+## 1
+
+(본문을 여기에 작성하세요.)
+
+![](assets/images/scene-01.png){fig-alt="장면 1" width=90%}
+
+\newpage
+
+## 2
+
+(다음 장면의 본문을 작성하세요.)
+
+![](assets/images/scene-02.png){fig-alt="장면 2" width=90%}
+
+\newpage
+
+## 3
+
+(마지막 부분과 교훈 또는 메시지를 작성하세요.)
