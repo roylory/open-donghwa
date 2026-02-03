@@ -10,7 +10,7 @@ format:
 
 (본문을 여기에 작성하세요.)
 
-![](assets/images/scene-01.png){fig-alt="장면 1" width=90%}
+![](images/scene-01.png){fig-alt="장면 1" width=90%}
 
 \newpage
 
@@ -18,7 +18,7 @@ format:
 
 (다음 장면의 본문을 작성하세요.)
 
-![](assets/images/scene-02.png){fig-alt="장면 2" width=90%}
+![](images/scene-02.png){fig-alt="장면 2" width=90%}
 
 \newpage
 

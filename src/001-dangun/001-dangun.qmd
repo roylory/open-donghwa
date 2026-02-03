@@ -1,0 +1,101 @@
+---
+title: "단군 이야기"
+lang: ko
+format:
+  pdf:
+    toc: false
+---
+
+\pagenumbering{gobble}
+
+아주 먼 옛날,  
+하늘에는 환인이라는 임금님이 계셨어요.
+
+<!-- illustration: sky king, gentle clouds -->
+![](images/scene-01.png){fig-alt="장면 1" width=90%}
+
+\newpage
+
+환인의 아들 환웅은  
+사람들을 돕고 싶었어요.  
+그래서 구름을 타고 땅으로 내려왔어요.
+
+<!-- illustration: Hwanung descending from clouds -->
+
+\newpage
+
+환웅은 사람들에게  
+농사 짓는 법과  
+서로 도우며 사는 마음을 알려 주었어요.
+
+<!-- illustration: teaching farming, warm village -->
+
+\newpage
+
+어느 날,  
+곰과 호랑이가 환웅을 찾아왔어요.
+
+“사람이 되고 싶어요.”
+
+<!-- illustration: friendly bear and tiger -->
+
+\newpage
+
+환웅은 마늘을 주며 말했어요.
+
+“이 마늘을 먹고  
+참고 기다리면  
+사람이 될 수 있어요.”
+
+<!-- illustration: garlic as symbolic object -->
+
+\newpage
+
+곰은 마늘을 먹고  
+조용히 기다렸어요.  
+하루하루, 꾹 참고 견뎠어요.
+
+<!-- illustration: patient bear in quiet place -->
+
+\newpage
+
+하지만 호랑이는  
+기다리는 것이 힘들었어요.
+
+“나는 숲으로 돌아갈래.”
+
+호랑이는 자기 길을 선택했어요.
+
+<!-- illustration: tiger walking back into forest -->
+
+\newpage
+
+오랜 시간이 지나,  
+곰은 사람이 되었어요.
+
+<!-- illustration: gentle transformation -->
+
+\newpage
+
+환웅과 곰 여자는  
+서로를 아끼며 살았고,  
+아이가 태어났어요.
+
+<!-- illustration: newborn baby, warm family -->
+
+\newpage
+
+그 아이의 이름은 단군이에요.
+
+단군은 자라서  
+사람들을 잘 이끄는 왕이 되었고,  
+그 나라를 고조선이라 불렀어요.
+
+<!-- illustration: peaceful ancient kingdom -->
+
+\newpage
+
+참고 기다리면,  
+좋은 일이 찾아와요.
+
+<!-- illustration: calm happy ending -->

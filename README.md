@@ -5,19 +5,29 @@ This repository contains a growing library of **open‑source Korean storybooks*
 ## How it works
 
 - Stories are written in [Quarto](https://quarto.org/) using Markdown syntax (`*.qmd`).
-- Illustrations live in `assets/images/` and are linked from within the stories.
-- The repository includes a shared `_quarto.yml` that specifies Korean fonts and page settings.  When you run `quarto render 001-sun-and-wind.qmd`, Quarto generates a polished PDF.
-- You can also render a story to HTML for quick preview (`quarto render 001-sun-and-wind.qmd --to html`).
+- Each book lives in `src/<book-id>/` with its source at `src/<book-id>/<book-id>.qmd`.
+- Illustrations live in `src/<book-id>/images/` and are linked with relative paths like `images/scene-01.png`.
+- The repository includes a shared `_quarto.yml` that specifies Korean fonts and page settings.
 
-## Building a PDF
+## Building PDFs
 
-To build a PDF from one of the stories, install Quarto, then run:
+To build **all** books into the `build/` folder:
 
 ```bash
-quarto render 001-sun-and-wind.qmd
+./build.sh
 ```
 
-The output `001-sun-and-wind.pdf` will appear next to your source file.  Replace the file name with your own story file when adding new tales.
+To build a **single** book:
+
+```bash
+quarto render src/001-sun-and-wind/001-sun-and-wind.qmd --to pdf --output-dir build --output 001-sun-and-wind.pdf
+```
+
+For quick HTML preview, swap the format:
+
+```bash
+quarto render src/001-sun-and-wind/001-sun-and-wind.qmd --to html --output-dir build
+```
 
 ## Contributing
 
