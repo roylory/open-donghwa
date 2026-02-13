@@ -1,0 +1,115 @@
+---
+title: "바보 온달"
+lang: ko
+format:
+  pdf:
+    pdf-engine: xelatex
+    classoption: landscape
+    toc: false
+    include-in-header:
+      text: |
+        \usepackage{graphicx}
+        \usepackage{xcolor}
+        \usepackage{tikz}
+        \usetikzlibrary{calc}
+
+        % Option C
+        % - overlay 없음
+        % - 중간 회색 텍스트 (출판용)
+        % - 안전한 의사-그림자 (텍스트 2회 출력)
+
+        % 페이지 전체 이미지 + 표지 제목 (중상단)
+        \newcommand{\CoverPage}[2]{%
+          \thispagestyle{empty}%
+          \begin{tikzpicture}[remember picture,overlay]
+            % background image
+            \node[inner sep=0pt] at (current page.center) {%
+              \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
+            };
+
+            % subtle highlight (very light, upward)
+            \node[
+              align=center,
+              text=white,
+              opacity=0.25,
+              font=\bfseries\fontsize{44}{52}\selectfont
+            ] at ($(current page.north)+(0,-0.22\paperheight)+(0,0.6pt)$) {#2};
+
+            % main text (neutral gray)
+            \node[
+              align=center,
+              text={rgb,255:red,68;green,68;blue,68}, % #444444
+              font=\bfseries\fontsize{44}{52}\selectfont
+            ] at ($(current page.north)+(0,-0.22\paperheight)$) {#2};
+          \end{tikzpicture}
+        }
+
+        % 페이지 전체 이미지 + 하단 자막 (중앙)
+        \newcommand{\ScenePage}[2]{%
+          \thispagestyle{empty}%
+          \begin{tikzpicture}[remember picture,overlay]
+            % background image
+            \node[inner sep=0pt] at (current page.center) {%
+              \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
+            };
+
+            % strong shadow
+            \node[
+              align=center,
+              text=black,
+              opacity=0.65,
+              font=\fontsize{26}{32}\selectfont
+            ] at ($(current page.south)+(0,0.10\paperheight)+(0,-1.4pt)$) {#2};
+
+            % mid shadow
+            \node[
+              align=center,
+              text=black,
+              opacity=0.35,
+              font=\fontsize{26}{32}\selectfont
+            ] at ($(current page.south)+(0,0.10\paperheight)+(0,-0.7pt)$) {#2};
+
+            % main text (warm off-white)
+            \node[
+              align=center,
+              text={rgb,255:red,236;green,230;blue,216}, % #ece6d8
+              font=\fontsize{26}{32}\selectfont
+            ] at ($(current page.south)+(0,0.10\paperheight)$) {#2};
+          \end{tikzpicture}
+        }
+mainfont: "Noto Serif CJK KR"
+---
+
+\pagenumbering{gobble}
+
+\CoverPage{images/cover.png}{바보 온달}
+\newpage
+
+\ScenePage{images/1.png}{옛날 고구려에 가난하지만 마음이 따뜻한 온달이 살고 있었어요.}
+\newpage
+
+\ScenePage{images/2.png}{사람들은 그를 바보 온달이라 불렀지만 그는 어머니를 정성껏 모셨어요.}
+\newpage
+
+\ScenePage{images/3.png}{평강 공주는 어릴 적부터 울면 바보 온달에게 보낸다는 말을 들으며 자랐어요.}
+\newpage
+
+\ScenePage{images/4.png}{어느 날 공주는 스스로 온달을 찾아가겠다고 결심했어요.}
+\newpage
+
+\ScenePage{images/5.png}{공주는 모두의 반대를 뒤로하고 온달을 직접 찾아갔어요.}
+\newpage
+
+\ScenePage{images/6.png}{처음 만난 온달은 수줍었지만 공주는 그의 진심을 알아보았어요.}
+\newpage
+
+\ScenePage{images/7.png}{공주는 온달에게 글과 무예를 가르쳤고 온달은 포기하지 않고 배웠어요.}
+\newpage
+
+\ScenePage{images/8.png}{노력 끝에 온달은 점점 늠름하고 자신감 있는 모습으로 변했어요.}
+\newpage
+
+\ScenePage{images/9.png}{전쟁이 일어나자 온달은 나라를 지키기 위해 용감하게 나섰어요.}
+\newpage
+
+\ScenePage{images/10.png}{이제 사람들은 그를 바보라 부르지 않고 훌륭한 장수라 불렀답니다.}
