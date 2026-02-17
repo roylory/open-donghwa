@@ -59,7 +59,7 @@ format:
               text=black,
               opacity=0.65,
               font=\fontsize{26}{32}\selectfont
-            ] at ($(current page.south)+(0,0.10\paperheight)+(0,-1.4pt)$) {#2};
+            ] at ($(current page.south)+(0,0.04\paperheight)+(0,-1.4pt)$) {#2};
 
             % mid shadow
             \node[
@@ -67,14 +67,14 @@ format:
               text=black,
               opacity=0.35,
               font=\fontsize{26}{32}\selectfont
-            ] at ($(current page.south)+(0,0.10\paperheight)+(0,-0.7pt)$) {#2};
+            ] at ($(current page.south)+(0,0.04\paperheight)+(0,-0.7pt)$) {#2};
 
             % main text (warm off-white)
             \node[
               align=center,
               text={rgb,255:red,236;green,230;blue,216}, % #ece6d8
               font=\fontsize{26}{32}\selectfont
-            ] at ($(current page.south)+(0,0.10\paperheight)$) {#2};
+            ] at ($(current page.south)+(0,0.04\paperheight)$) {#2};
           \end{tikzpicture}
         }
 mainfont: "Noto Serif CJK KR"
@@ -91,7 +91,7 @@ mainfont: "Noto Serif CJK KR"
 \ScenePage{images/2.png}{사람들은 그를 바보 온달이라 불렀지만 그는 어머니를 정성껏 모셨어요.}
 \newpage
 
-\ScenePage{images/3.png}{평강 공주는 어릴 적부터 울면 바보 온달에게 보낸다는 말을 들으며 자랐어요.}
+\ScenePage{images/3.png}{평강 공주는 어릴 적부터 울면 바보 온달에게 보낸다는 말을 들었어요.}
 \newpage
 
 \ScenePage{images/4.png}{어느 날 공주는 스스로 온달을 찾아가겠다고 결심했어요.}
