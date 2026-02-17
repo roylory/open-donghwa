@@ -31,4 +31,4 @@ format:
         % Try these fonts; adjust to what your system/CI has installed.
         \setmainfont{Noto Serif CJK KR}
         \setsansfont{Noto Sans CJK KR}
-        \setmonofont{Noto Sans Mono CJK KR}
+        \setmonofont{Noto Mono CJK KR}
