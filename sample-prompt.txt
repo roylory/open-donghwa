@@ -1,0 +1,29 @@
+traditional Korean children’s picture book illustration,
+soft hand-painted watercolor style,
+muted warm earth tones,
+simple shapes,
+gentle facial expressions,
+storybook illustration,
+flat perspective,
+calm and cozy atmosphere,
+landscape 3:2 ratio
+no text in the image
+
+// For cover image
+composition designed to leave space for a large title,
+
+// For scene image
+slightly darker background at the bottom reserved for caption overlay
+
+//
+// Actual prompt that describes the image comes here
+//
+
+no anime,
+no manga,
+no realistic rendering,
+no photorealism,
+no 3d,
+no cinematic lighting,
+no dramatic shadows,
+no modern objects
